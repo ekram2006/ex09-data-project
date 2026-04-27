@@ -5,9 +5,9 @@ title: COMP110 Data Project
 
 # Should COMP110 Livestream Its Lectures?
 
-**An Analysis of the Spring 2026 course survey**
+An Analysis of the Spring 2026 course survey
 
-*Ethan Kramer & Blake Sanders, COMP 110, Spring 2026, EX09*
+Ethan Kramer & Blake Sanders, COMP 110, Spring 2026, EX09
 
 ## Summary
 
@@ -17,7 +17,7 @@ The survey directly asks students to rate their support for livestreaming on a 1
 
 ## Finding 1: Overall support is strong
 
-The distribution of `add_livestream` responses is sharply skewed to the right. The single most common answer was Strongly Agree, and roughly 3/4 of students rated their support at 5 or higher.
+The distribution of add_livestream responses is sharply skewed to the right. The single most common answer was Strongly Agree, and roughly 3/4 of students rated their support at 5 or higher.
 
 ![Overall Support for Livestreaming COMP110 Lectures](images/chart1_distribution.png)
 
@@ -35,13 +35,13 @@ Clearly, livestream demand isn't a niche request from one experience band.
 
 ## Finding 3: Demand rises sharply with perceived difficulty
 
-If experience doesn't drive demand, what does? The clearest pattern in the analysis comes from `difficulty`.
+If experience doesn't drive demand, what does? The clearest pattern in the analysis comes from difficulty.
 
-Mean support for livestreaming rises substantially as perceived difficulty rises, climbing from 4.88 at `difficulty=1` up to 6.37 at `difficulty=7`. The box plot shows the entire distribution shifting up as difficulty rises.
+Mean support for livestreaming rises substantially as perceived difficulty rises, climbing from 4.88 at difficulty=1 up to 6.37 at difficulty=7. The box plot shows the entire distribution shifting up as difficulty rises.
 
 ![Livestream Support by Perceived Course Difficulty](images/chart3_difficulty.png)
 
-An independent check against the `understanding` variable reproduces a similar pattern: students who feel "lost" want livestreaming more than students who feel they understand the material.
+An independent check against the understanding variable reproduces a similar pattern: students who feel lost want livestreaming more than students who feel they understand the material.
 
 ## Conclusion
 
