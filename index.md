@@ -3,53 +3,58 @@ layout: default
 title: COMP110 Data Project
 ---
 
-# Should COMP110 Lectures Be Livestreamed?
+# Should COMP110 Livestream Its Lectures?
 
-**By Ethan Kramer**
+**An analysis of the Spring 2026 course survey**
 
-## Project Summary
+*Ethan Kramer & Blake Sanders — COMP 110, Spring 2026, EX09*
 
-For our COMP110 data project, we explored whether in-person lectures should be livestreamed so that students who can't attend in person aren't required to. The motivation was simple: students have very different schedules, learning styles, and life circumstances, and a livestream option could create real value by giving flexibility without forcing anyone to give up the in-person experience.
+## Summary
 
-To investigate whether students would actually support this change, we analyzed the anonymized COMP110 course survey, focusing on the `add_livestream` column — student agreement (on a 1–7 scale) with the idea that lectures should be live streamed.
+This project tests a proposed change to COMP110: that in-person lectures should be livestreamed. Using survey responses from 764 students across all three sections of the course, we look at whether livestreaming would actually create value — and which students would benefit most from it.
 
-We approached the question in three layers:
-1. What does overall student support for livestreaming look like?
-2. Are there specific subgroups (transfer students, low-experience students) driving the support?
-3. Does support track with how difficult students find the course?
+The survey directly asks students to rate their support for livestreaming on a 1-to-7 Likert scale (`add_livestream`). It also captures variables — transfer status, prior programming experience, perceived difficulty, and self-reported understanding — that let us figure out who is driving the support.
 
-## Analysis & Visualizations
+## Finding 1 — Overall support for livestreaming is strong
 
-### Chart 1: Overall Support for Livestreaming
+The distribution of `add_livestream` responses is sharply skewed to the right. Strongly Agree (7) was the single most common answer, and roughly three-quarters of the class rated their support at 5 or higher.
 
 ![Overall Support for Livestreaming COMP110 Lectures](assets/chart1.png)
 
-The distribution of student responses is strongly skewed toward agreement. The single largest group selected 7 (Strongly Agree), and responses of 5, 6, or 7 together make up roughly three-quarters of the class. This is initial evidence that livestreaming is widely wanted — but a student who *prefers* livestreaming is different from a student who *needs* it, so the rest of the analysis dug into who actually wants it most.
+This is a strong signal that students want this option — but a student who *wants* livestreaming isn't necessarily a student who *needs* it. The next two findings dig into who's actually driving the support.
 
-### Chart 2: Support by Prior Programming Experience
+## Finding 2 — The support is broad, not subgroup-specific
+
+Our first hypothesis was that demand would be concentrated in specific subgroups — transfer students, or students with little prior programming experience. Neither hypothesis held up.
+
+Transfer students (n=81) and non-transfer students reported nearly identical mean support. Across the five prior-experience categories, mean support sat in a narrow band of roughly 5.51 to 5.79 — basically flat from "None to less than one month" all the way to "Over 2 years."
 
 ![Mean Support for Livestreaming by Prior Programming Experience](assets/chart2.png)
 
-We expected that students with no prior programming experience might want livestreaming the most, since they have the steepest learning curve. The data didn't support that. Mean support stayed remarkably consistent across all five experience levels — clustered narrowly between 5.51 and 5.79. Support is popular across experience levels rather than concentrated in any single subgroup. We also checked transfer students separately, and the pattern was the same: both transfers (n=81) and non-transfers rated support high, with no meaningful gap.
+So this isn't a niche request. Whatever's driving the support is something more universal than one type of student.
 
-### Chart 3: Support by Perceived Course Difficulty
+## Finding 3 — Demand rises sharply with perceived course difficulty
+
+If experience and transfer status don't drive demand, what does? The clearest pattern in the analysis comes from `difficulty`.
+
+Mean support climbs from 4.88 at difficulty=1 up to 6.37 at difficulty=7. The box plot shows the entire distribution shifting upward as perceived difficulty rises — at difficulty=1 the median sits around 5 with a wide spread, but at difficulty=7 the median is 7 with most responses clustered near the top.
 
 ![Livestream Support by Perceived Course Difficulty](assets/chart3.png)
 
-This is where the strongest signal showed up. Mean support for livestreaming rises substantially with how difficult students find the course — from 4.88 at difficulty=1 to 6.37 at difficulty=7. The box plot shows the entire distribution shifting upward as difficulty increases: at difficulty=1 the median is around 5 with a wide spread, but at difficulty=7 the median sits at 7 with most responses clustered near the top. We confirmed this pattern with a second variable, `understanding`, and found the same thing: students who feel lost want livestreaming more than students who feel they understand most of the material.
+We then ran an independent check against the `understanding` variable and found the same pattern: students who feel lost want livestreaming more than students who feel they understand the material. Two different variables pointing to the same conclusion strengthens the result.
 
 ## Conclusion
 
-The analysis supports the idea of livestreaming in-person lectures. The overall distribution of `add_livestream` responses is strongly skewed toward agreement, with "Strongly Agree" as the single most common response and roughly three-quarters of students rating their support at 5 or higher. When we sliced the data by transfer status and prior programming experience, demand looked similar across groups — meaning the support isn't being driven by one specific student type. The key finding was that mean support rises from 4.88 at difficulty=1 to 6.37 at difficulty=7, with the box plot distribution shifting clearly upward at higher difficulty levels. Checking against the `understanding` variable reproduced the same pattern: students who feel more lost want livestreaming more. Taken together, the data supports the conclusion that livestreaming would be widely welcomed and would primarily benefit students who are struggling.
+The data supports livestreaming COMP110 lectures. Support is broad across the student body, but it's strongest among students who are finding the course most difficult. That combination — wide popularity plus concentrated benefit for the students who need help most — is what makes this change valuable.
 
-**Potential trade-offs and downsides:**
-- Livestreaming could reduce in-person attendance, which might lower lecture energy and informal peer interaction before/after class.
-- It requires technical setup (cameras, mics, recording infrastructure) and instructor comfort with being recorded.
-- Some students might lean on the stream as a substitute for engagement rather than a supplement, which could hurt their learning outcomes — particularly the struggling students who would benefit most from being there in person.
+### Trade-offs to consider
 
-**Future work and refinements:**
-- A follow-up survey could ask whether students want a *live* stream specifically, or whether *recorded* lectures uploaded after class would meet the same need at lower cost.
-- Tracking whether students who use the livestream perform differently on assessments than in-person attendees would help measure the actual learning impact.
-- The course could pilot livestreaming for a single section or a portion of the semester and measure attendance, performance, and student satisfaction before committing to it course-wide.
+1. **In-person attendance may decline.** A livestream option could erode the engagement that comes from actually being in the room together.
+2. **Technical and staffing overhead.** A reliable livestream needs working AV equipment, a platform, and ideally a TA monitoring chat.
+3. **Signals about course norms.** Adopting livestreaming may implicitly communicate that in-person attendance is optional, which could shift attendance expectations in a large intro course.
 
-The data tells a clear story: students want this, and the students who want it most are the ones for whom flexibility matters most.
+### What's next
+
+- **Livestream-on-request** — available by short advance request rather than as a default — could preserve in-person norms while still supporting the students the data identifies.
+- **Live TA-moderated chat** alongside the stream would let remote viewers participate actively rather than just receive a glorified recording.
+- **Track outcomes**, not just preferences. A follow-up could measure whether livestream users perform differently on assessments than in-person attendees, which would tell us if there's an actual learning cost.
