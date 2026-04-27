@@ -19,7 +19,7 @@ The survey directly asks students to rate their support for livestreaming on a 1
 
 The distribution of `add_livestream` responses is sharply skewed to the right. The single most common answer was Strongly Agree, and roughly 3/4 of students rated their support at 5 or higher.
 
-![Overall Support for Livestreaming COMP110 Lectures](assets/chart1.png)
+![Overall Support for Livestreaming COMP110 Lectures](images/chart1_distribution.png)
 
 Livestreaming's popularity is not enough on its own, though. A student who wants livestreaming is different from a student who needs it. The next two findings ask which students drive the demand.
 
@@ -29,7 +29,7 @@ The first hypothesis was that demand would be concentrated in particular subgrou
 
 Transfer and non-transfer students reported nearly identical mean support. And mean support across the five prior experience categories were in a narrow band around 5.5 to 5.8 out of 7, with no group meaningfully above or below the others.
 
-![Mean Support for Livestreaming by Prior Programming Experience](assets/chart2.png)
+![Mean Support for Livestreaming by Prior Programming Experience](images/char2_prior_exp.png)
 
 Clearly, livestream demand isn't a niche request from one experience band.
 
@@ -39,7 +39,7 @@ If experience doesn't drive demand, what does? The clearest pattern in the analy
 
 Mean support for livestreaming rises substantially as perceived difficulty rises, climbing from 4.88 at `difficulty=1` up to 6.37 at `difficulty=7`. The box plot shows the entire distribution shifting up as difficulty rises.
 
-![Livestream Support by Perceived Course Difficulty](assets/chart3.png)
+![Livestream Support by Perceived Course Difficulty](images/chart3_difficulty.png)
 
 An independent check against the `understanding` variable reproduces a similar pattern: students who feel "lost" want livestreaming more than students who feel they understand the material.
 
