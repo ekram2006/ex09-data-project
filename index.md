@@ -7,7 +7,7 @@ title: COMP110 Data Project
 
 **An Analysis of the Spring 2026 course survey**
 
-*Ethan Kramer & Blake Sanders — COMP 110, Spring 2026, EX09*
+*Ethan Kramer & Blake Sanders, COMP 110, Spring 2026, EX09*
 
 ## Summary
 
@@ -15,7 +15,7 @@ This project analyzes a proposed change to COMP110: that in-person lectures shou
 
 The survey directly asks students to rate their support for livestreaming on a 1-to-7 Likert scale. It also captures variables we can use to find which subgroups want it most.
 
-## Finding 1 — Overall support is strong
+## Finding 1: Overall support is strong
 
 The distribution of `add_livestream` responses is sharply skewed to the right. The single most common answer was Strongly Agree, and roughly 3/4 of students rated their support at 5 or higher.
 
@@ -23,7 +23,7 @@ The distribution of `add_livestream` responses is sharply skewed to the right. T
 
 Livestreaming's popularity is not enough on its own, though. A student who wants livestreaming is different from a student who needs it. The next two findings ask which students drive the demand.
 
-## Finding 2 — Demand is broad-based, not subgroup-specific
+## Finding 2: Demand is broad-based, not subgroup-specific
 
 The first hypothesis was that demand would be concentrated in particular subgroups such as transfer students or students with little prior programming experience. Neither hypothesis held well.
 
@@ -33,7 +33,7 @@ Transfer and non-transfer students reported nearly identical mean support. And m
 
 Clearly, livestream demand isn't a niche request from one experience band.
 
-## Finding 3 — Demand rises sharply with perceived difficulty
+## Finding 3: Demand rises sharply with perceived difficulty
 
 If experience doesn't drive demand, what does? The clearest pattern in the analysis comes from `difficulty`.
 
